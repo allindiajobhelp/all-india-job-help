@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All India Job Help</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+}
+header {
+    background: #0d47a1;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav {
+    background: #1565c0;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+section {
+    padding: 20px;
+}
+.card {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+button {
+    background: #0d47a1;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.lang-btn {
+    float: right;
+    margin-top: -35px;
+    margin-right: 15px;
+    background: white;
+    color: #0d47a1;
+    font-weight: bold;
+}
+</style>
+<script>
+function switchLang(lang){
+    if(lang === 'hi'){
+        document.getElementById("title").innerText = "ऑल इंडिया जॉब हेल्प";
+        document.getElementById("about").innerText = "हम सभी सरकारी और प्रतियोगी परीक्षाओं की जानकारी, ऑनलाइन फॉर्म भरना और रिजल्ट चेक करने की सुविधा देते हैं।";
+    } else {
+        document.getElementById("title").innerText = "All India Job Help";
+        document.getElementById("about").innerText = "We provide all government and competitive exam updates, online form filling and result checking services.";
+    }
+}
+</script>
+</head>
+
+<body>
+
+<header>
+<h1 id="title">All India Job Help</h1>
+<button class="lang-btn" onclick="switchLang('hi')">Hindi</button>
+<button class="lang-btn" onclick="switchLang('en')">English</button>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#jobs">Latest Jobs</a>
+<a href="#results">Results</a>
+<a href="#apply">Apply Form</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section>
+<div class="card">
+<h2>About Us</h2>
+<p id="about">
+We provide all government and competitive exam updates, online form filling and result checking services.
+</p>
+</div>
+
+<div class="card" id="jobs">
+<h2>Latest Exam Updates</h2>
+<ul>
+<li>SSC GD 2026 – Coming Soon</li>
+<li>Railway NTPC – Notification Expected</li>
+<li>UP Police Constable – Apply Now</li>
+<li>MP Patwari – Result Declared</li>
+</ul>
+</div>
+
+<div class="card" id="results">
+<h2>Check Results</h2>
+<p>Click below to check latest results.</p>
+<button>View Results</button>
+</div>
+
+<div class="card" id="apply">
+<h2>Online Form Apply</h2>
+<p>We help in filling all India competitive exam forms.</p>
+<button>Apply Now</button>
+</div>
+
+<div class="card">
+<h2>Payment</h2>
+<p>Online payment
